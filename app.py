@@ -10,6 +10,15 @@ def contact_us():
   return render_template("contactus.html")
 
 
+
+
+
+
+def index():
+  # return file name here
+  return render_template("index.html")
+
+
 if __name__ == "__main__":
   app.run()
   
