@@ -7,3 +7,4 @@ app=Flask(__name__)
 
 def contact_us():
   # return file name here
+  return render_template("contactus.html")
