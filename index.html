@@ -6,11 +6,13 @@
     <title>AW Property</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <meta http-equiv="refresh" content="0; url=webpages/home.html">
 </head>
 <body>
 <!--     Img  modify when needed -- LOGO-->
-    <img class = "logo_img"src = "AW_Image_removebg-preview.png" alt = "logo img"/>
+    <img class = "logo_img"src = "AW_Image-removebg-preview.png" alt = "logo img"/>
     <h1>AW Property</h1>
+    <div id="navbar-container"></div>
 <!--     Navbar -->
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -21,31 +23,37 @@
   <div class="collapse navbar-collapse" id="navbarNavDropdown">
     <ul class="navbar-nav">
       <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="webpages/home.html">Home </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Features</a>
+        <a class="nav-link" href="webpages/features.html">Features</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Pricing</a>
+        <a class="nav-link" href="webpages/pricing.html">Pricing</a>
       </li>
-      <li class="nav-item dropdown">
+      <!-- <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Dropdown link
         </a>
-<!--            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <a class="dropdown-item" href="#">Something else here</a>
-        </div> -->
-       
-      </li>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="action.html">Action</a>
+          <a class="dropdown-item" href="another-action.html">Another action</a>
+          <a class="dropdown-item" href="something-else.html">Something else here</a>
+        </div>
+      </li>-->
     </ul>
   </div>
 </nav>
 <!--     Linking Javascript file -->
     <script src="style.js"></script> 
-
+    <script>
+        fetch('webpages/navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar-container').innerHTML = data;
+                document.querySelector('.nav-item:nth-child(1) .nav-link').classList.add('active');
+            });
+    </script>
     <footer>
 
     <p>&copy; 2025 AW Property</p> 

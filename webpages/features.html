@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Features - AW Property</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+    <img class="logo_img" src="../AW_Image-removebg-preview.png" alt="logo img"/>
+    <h1>AW Property</h1>
+    <div id="navbar-container"></div>
+    <h1>Features</h1>
+    <p>Here are some of the features of AW Property:</p>
+    <ul>
+        <li>Feature 1</li>
+        <li>Feature 2</li>
+        <li>Feature 3</li>
+    </ul>
+    <script src="../style.js"></script>
+    <script>
+        fetch('navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar-container').innerHTML = data;
+                document.querySelector('.nav-item:nth-child(2) .nav-link').classList.add('active');
+            });
+    </script>
+    <footer>
+        <p>&copy; 2025 AW Property</p>
+    </footer>
+</body>
+</html>
