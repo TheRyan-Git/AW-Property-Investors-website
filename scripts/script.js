@@ -1,3 +1,4 @@
+// console.log("testing");
 $(document).ready(function(){
     $(window).scroll(function(){
         // scroll navbar on scroll script
