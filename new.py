@@ -9,7 +9,7 @@ def main_page():
 
 
 if __name__ == "__main__":
-    app.run()
+    app.run(debug=True)
 
 
 #Skeleton code for Flask keep on working on this....
