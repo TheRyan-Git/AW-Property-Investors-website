@@ -8,7 +8,7 @@ def main_page():
   return render_template('index.html')
 
 
-
+@app.route("/terms_service")
 def terms_service():
   return render_template('terms_service.html')
 
