@@ -8,6 +8,12 @@ def main_page():
   return render_template('index.html')
 
 
+
+def terms_service():
+  return render_template('terms_service.html')
+
+
+
 if __name__ == "__main__":
     app.run(debug=True)
 
