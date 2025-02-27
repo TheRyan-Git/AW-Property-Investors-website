@@ -507,6 +507,13 @@ section .sub-title {
 
 .send-button button:hover {
     box-shadow: 0px 0px 5px black;
+    cursor: pointer;
+    /* Have smooth cursor transition */
+    transition: transform 0.3s ease;
+    transform: scale(1.05);
+    transform: translate(-50%, -50%) scale(1.05);
+
+
 }
 
 .send-button button:focus {
