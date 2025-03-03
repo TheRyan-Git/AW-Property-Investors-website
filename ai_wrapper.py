@@ -7,3 +7,26 @@ openai_api_key = # put yout api key here
 if openai_api_key is None:
     raise ValueError("OpenAI API key is not set in environment variables.")
 
+url = "https://api.openai.com/v1/chat/completions"
+
+headers = {
+    "Content-Type": "application/json",
+    "Authorization": f"Bearer {openai_api_key}"
+}
+
+data = {
+    "model": "gpt-3.5-turbo",
+    "messages": [
+        {
+            "role": "system",
+            "content": "You are a helpful assistant."
+        },
+        {
+            "role": "user",
+            "content": "Hello!"
+        }
+    ]
+}
+
+response = requests.post(url, headers=headers, json=data)
+
