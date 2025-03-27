@@ -1,1 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>AW Property</title>
+        <link rel="shortcut icon" type="image/jpg" href="images/favicon.png"/>
+
+
+        <!--custom stylesheet-->
+        <link rel="stylesheet" href="./styles/style.css">
+        
+
+        <!--font awesome icons-->
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />     -->
+
+        <!--google material icons-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        
+        <!--jquery cdn-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="icon" href="images/AW_Image-removebg-preview.png" type="image/x-icon">
+
+    </head>
+    <body>
+        <script src="./scripts/script.js"></script>
+
+        <div class="scroll-up">
+            <i class="fas fa-arrow-up"></i>
+        </div>
+
+        <!--hamburger dropdown-->
+        <div class="menu-btn">
+            <i class="fas fa-bars"></i>
+        </div>
+<!--         INCOMPLETE doesn't work keep on working -->
+
+        <!--navigation bar-->
+        <nav class="navbar">
+            <ul class="menu">
+                <li class = "logo_img"><img src="images/AW_Image-removebg-preview.png"/></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#contact">Our Team</a></li>
+                
+            </ul> 
+        </nav>
+        
+        <!--home section-->
+        <section class="home" id="home">
+            <div class="home-content">
+                <div class="text-1">Client_Person_Name</div>
+                <div class="text-2">Real Estate Agent</div>
+            </div>     
+        </section>
+
+        <!--about section-->
+        <section class="about" id="about">
+            <h1 class="title">About me</h1>
+            <h2 class="sub-title">Who we are</h2>
+                <div class="about-content">
+                    <div class="column-left">
+                        <img src="./images/about-lg.jpg" alt="">
+                    </div>
+                    <div class="column-right">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium nobis omnis, sunt voluptatibus, animi deleniti dignissimos doloremque culpa debitis qui consequatur reprehenderit?
+                        </p>
+                    </div>
+                </div>
+        </section>
+
+        <!--gallery section-->
+        <section class="gallery" id="gallery">
+            <div class="gallery-content">
+                <div class="text-2">Embrace</div>
+                <div class="text-1">Your Passion</div>
+            </div>
+        </section>
+
+        <!--my services section-->
+        <section class="services" id="services">
+                <h1 class="title">Our services</h1>
+                <h2 class="sub-title">Experience You Can Trust</h2>
+                <div class="services-content">
+                    <div class="card">
+                        <span class="material-icons">search</span>
+                        <div class="text-2">Rental Search</div>
+                        <p class="service-desc">Assistance finding and moving to a new home.</p>
+                    </div>
+
+                    <div class="card">
+                        <span class="material-icons">real_estate_agent</span>
+                        <div class="text-2">Buying & Selling</div>
+                        <p class="service-desc">Assistance buying a property, also assistance marketing and selling a property.</p>
+                    </div>
+
+                    <div class="card">
+                        <span class="material-icons">question_answer</span>
+                        <div class="text-2">Consultation</div>
+                        <p class="service-desc">Answering all question and giving a personalized and professional opinion.</p>
+                    </div>
+                </div>
+        </section>
+        
+        <!--contant me section start-->
+        <section class="contact" id="contact">
+            <h1 class="title">Contact me</h1>
+            <h2 class="sub-title">Email: CLIENT_EMAIL</h2>
+                <div class="contact-content">
+                    <form class="contact-form" name="contact" method="POST" data-netlify="true">
+                        <div class="fields">
+                            <div class="field">
+                                <label for="first-name">First Name</label>
+                                <input style="width: 90%;" type="text" name="first-name" id="" maxlength="32" placeholder="" required>
+                            </div>
+                            <div class="field">
+                                <label for="last-name">Last Name</label>
+                                <input type="text" name="last-name" id="" maxlength="45" placeholder="" required>
+                            </div>
+                            <div class="field" style="width: 100%;">
+                                <label for="email">Email*</label>
+                                <input type="email" name="email" id="" placeholder="" required>
+                            </div>
+                        </div>
+                        <div class="text-area">
+                            <label for="message">Message</label>
+                            <textarea name="message" id="" cols="30" rows="10" maxlength="700" placeholder="" required></textarea>
+                        </div>
+                        <div class="send-button">
+                            <button type="submit">Send</button>
+                        </div>
+                    </form>
+                </div>
+        </section>
+
+        <!--footer-->
+
+        <footer>
+            <div class="links">
+                <a class="facebook" href="Facebook link">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a class="terms_service" href="">Terms and Services</a>
+                <a class="instagram" href="instagram link here">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a class="youtube" href="youtube link here">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                
+            </div>
+            <span>All rights reserved &#169; 2025</span>
+<!--             add clients phone number here -->
+        </footer>
+    </body>
+</html>
 
