@@ -1,2 +1,2 @@
 # Created new repo for website this repo is useless and not updated
-Delete this repo
+Delete this repo not needed anymore
